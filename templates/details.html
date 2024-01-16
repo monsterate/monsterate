@@ -1,0 +1,11 @@
+<!-- details.html -->
+{% extends "base.html" %}
+
+{% block title %}
+Details for Port {{ port }}
+{% endblock title %}
+
+{% block body %}
+  <h1>Details for Port {{ port }}</h1>
+  <p>Visit the external link for more details: <a href="{{ detail_info }}" target="_blank">{{ detail_info }}</a></p>
+{% endblock %}

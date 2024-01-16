@@ -1,0 +1,10 @@
+{% if output==' 21: "Potential FTP Vulnerability"' %}
+    <h2>Port 22 Open</h2>
+    <a
+      href="https://www.cloudflare.com/learning/access-management/what-is-ssh/#:~:text=The%20Secure%20Shell%20(SSH)%20protocol%20is%20a%20method%20for%20securely,and%20encrypt%20connections%20between%20devices."
+    >Read More</a>
+    {% elif output=='80: "Potential Web Server Vulnerability"' %}
+    <h2>Port 80 Open</h2>
+    <a href="https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/#:~:text=The%20Hypertext%20Transfer%20Protocol%20(HTTP,of%20the%20network%20protocol%20stack.">Read more</a>
+
+    {% endif %}

@@ -1,0 +1,119 @@
+ 
+{% extends "base.html" %}
+
+{% block title %}
+Contact Page
+{% endblock title %}
+
+{% block body %}
+<div class=container>
+    <form method="post" action="/contact" class="m-5 p-5">
+        {% csrf_token %}
+        <div class="form-group fw-bold">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div><br/>
+        <div class="form-group fw-bold">
+          <label for="exampleInputComment">Comment</label>
+          <input type="text" class="form-control" id="exampleInputComment1" placeholder="Comment">
+        </div><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
+
+
+
+
+
+{% comment %} {% extends "base.html" %}
+
+{% block title %}
+Contact Page
+{% endblock title %}
+
+{% block body %}
+
+{% endblock body %}
+ {% endcomment %}
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-color: #5A5A5A;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #contact-form {
+            width: 400px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            background-color: #000;
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            background-color: #333;
+            color: #000;
+            border: 1px solid #555;
+            border-radius: 4px;
+        }
+
+        #contact-form button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html> {% endcomment %}

@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+About Page
+{% endblock title %}
+<head>
+<style>
+    body {
+        background-color: #5A5A5A;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    #about-container {
+        width: 1000px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        background-color: #000;
+        text-align: center;
+    }
+
+    #about-container h2 {
+        margin-bottom: 20px;
+    }
+
+    #about-container p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    #about-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+</style>
+</head>
+{% block body %}
+<br/><br/><br/><br/><br/><br/><div class="container flex justify-center align-items-md-center "> <div id="about-container">
+    <h2>About Us</h2>
+    <p>Welcome to Our Port Scanner Website, where we empower users with the tools to enhance their network security. Our web application is dedicated to providing a comprehensive and efficient port scanning experience, ensuring that you have the insights needed to secure your digital assets.
+
+        <br/>
+        <br/>
+        <b>Our Mission</b><br/><br/>
+        
+        At Port Scanner WebApplication , our mission is clear: to offer a user-friendly and powerful port scanning solution that caters to both general and custom port scanning needs. We understand the critical importance of safeguarding your networks against potential threats, and our tool is designed to be an invaluable asset in your cybersecurity arsenal.
+        
+        Key Features:
+        
+        General and Custom Port Scanning: Whether you're looking to perform a broad scan across commonly used ports or target specific ports relevant to your infrastructure, our web application has you covered.
+        
+        Vulnerability Insights: Our port scanner doesn't just stop at identifying open ports; it goes a step further by providing detailed insights into vulnerabilities associated with those open ports. This feature enables you to proactively address potential weaknesses in your network security.
+        
+        User-Friendly Interface: We believe in making powerful tools accessible to everyone. Our intuitive and user-friendly interface ensures that both beginners and seasoned professionals can navigate and leverage the full capabilities of our port scanning application effortlessly.
+        
+        Fast and Reliable: Time is of the essence in cybersecurity. Our port scanner is optimized for speed and reliability, delivering results swiftly without compromising accuracy.
+        
+        Why Choose [Your Port Scanner Website]?
+        
+        Security at Your Fingertips: With our port scanning tool, you have the means to actively monitor and secure your network. Stay one step ahead of potential threats by regularly scanning your ports for vulnerabilities.
+        
+        Tailored Solutions: Whether you're an IT professional, a system administrator, or a cybersecurity enthusiast, our tool is designed to meet your specific scanning requirements. Customize your scans to fit your unique network configuration.
+        
+        Continuous Improvement: We are committed to staying ahead of the curve in the ever-evolving landscape of cybersecurity. Expect regular updates and enhancements to ensure that [Your Port Scanner Website] remains a cutting-edge solution for your security needs.
+        
+        Join us on the journey to fortify your digital defenses. [Your Port Scanner Website] is not just a tool; it's your partner in securing what matters most. Explore the power of proactive cybersecurity with us today.
+        
+        
+        
+        
+        
+        </p>
+    {% comment %} <img style="width:70px;
+    height:70px;" src="{% static 'img001.png' %}" alt="Placeholder Image"> {% endcomment %}
+</div></div>
+{% endblock body %}
+
+
+
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            background-color: #5A5A5A;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #about-container {
+            width: 1000px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            background-color: #000;
+            text-align: center;
+        }
+
+        #about-container h2 {
+            margin-bottom: 20px;
+        }
+
+        #about-container p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        #about-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        img{
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="about-container">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo et urna vestibulum congue. Suspendisse potenti. Donec eget risus vel elit tincidunt tincidunt ac sit amet turpis.</p>
+        <p>Proin nec justo vel urna cursus ullamcorper. Integer in ex vitae elit cursus elementum vel nec urna. Vestibulum in vestibulum libero. Fusce nec rhoncus ligula. Nunc ullamcorper ullamcorper ante at pellentesque.</p>
+        <img src="{% static 'img001.png' %}" alt="Placeholder Image">
+    </div>
+
+</body>
+</html>  {% endcomment %}
